@@ -12,10 +12,11 @@ This will generate two files named `wofid_wofname_h3resolution_kind.geojson`
 - [85688637_California_6_h3_hexbins.geojson](data/85688637_California_6_h3_hexbins.geojson)
 - [85688637_California_6_h3_centroids.geojson](data/85688637_California_6_h3_centroids.geojson)
 
-The feature IDs of the hexbins are the h3 IDs.
-
 ![california_h3_r5_hexbins](images/california_h3_r5_hexbins.png)
 ![california_h3_r5_centroids](images/california_h3_r5_centroids.png)
+
+The feature IDs of the hexbins are the h3 IDs. (These are resolution 5 for the sake of illustration.)
+
 
 You can then dig in using whatever GeoJSON tools you prefer, such as [HERE Data Hub aka XYZ](https://www.here.xyz/) or Tangram and [Space Invader](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=zCOXmZmy&token=AE91crC4SyWB3zCSeH3HWwA&basemap=xyz-pixel&projection=mercator&demo=0&vizMode=xray&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=2&places=1&roads=1&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=0&tags=85688637_california_5_h3_hexagons&palette=viridis&paletteFlip=false&sort=count&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#6.6833333333333345/37.416/-119.648)
 
