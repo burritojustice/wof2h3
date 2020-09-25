@@ -9,8 +9,8 @@ This node.js script takes a WOF ID and an H3 resolution as input and generates a
 
 This will generate two files named `wofid_wofname_h3resolution_kind.geojson`
 
-- [85688637_California_6_h3_hexagons.geojson](data/85688637_California_6_h3_hexagons.geojson)
-- [85688637_California_6_h3_centroids.geojson](data/85688637_California_6_h3_hexagons.geojson)
+- [85688637_California_6_h3_hexbins.geojson](data/85688637_California_6_h3_hexbins.geojson)
+- [85688637_California_6_h3_centroids.geojson](data/85688637_California_6_h3_centroids.geojson)
 
 The feature IDs of the hexbins are the h3 IDs.
 
