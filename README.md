@@ -17,11 +17,13 @@ The feature IDs of the hexbins are the h3 IDs.
 ![california_h3_r5_hexbins](images/california_h3_r5_hexbins.png)
 ![california_h3_r5_centroids](images/california_h3_r5_centroids.png)
 
+You can then dig in using whatever GeoJSON tools you prefer, such as [HERE Data Hub aka XYZ](https://www.here.xyz/) or Tangram and [Space Invader](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=zCOXmZmy&token=AE91crC4SyWB3zCSeH3HWwA&basemap=xyz-pixel&projection=mercator&demo=0&vizMode=xray&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=2&places=1&roads=1&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=0&tags=85688637_california_5_h3_hexagons&palette=viridis&paletteFlip=false&sort=count&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#6.6833333333333345/37.416/-119.648)
+
 If an `alt_mapzen` [alternate geometry](https://whosonfirst.org/docs/geometries/alt/) is available, it will be used instead of the default WOF geometry. (Sorry Farallons.)
 
 ## What is this for?
 
-I made this with the idea that high resolution H3 grids could be viewed at lower map zoom levels to create a dot density map or a pseudo heat map.  It's also interesting to see how h3 hexbins stack at different resolutions. 
+I made this with the idea that high resolution H3 grids could be viewed at lower map zoom levels to create a dense dot density map or a pseudo heat map using intersections, or joins on the H3 IDs.  It's also interesting to see how h3 hexbins stack at different resolutions. 
 
 ![germany r4,5,6](images/germany_4_5_6.png)
 [link](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=cQMGVs2y&token=AKkz6TS4RG6piCQnWro2gAA&basemap=xyz-pixel&projection=mercator&demo=0&vizMode=xray&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=3&places=1&roads=0&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=1&tags=85633111_germany_4_h3_hexbins%2C85633111_germany_5_h3_hexbins%2C85633111_germany_6_h3_hexbins&property=%40ns%3Acom%3Ahere%3Axyz.uuid&palette=colorBrewerBlue&paletteFlip=true&sort=values&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#8.604166666666686/54.0643/9.5771)
@@ -49,4 +51,4 @@ I don't really know what I'm doong with node.js and got this to work through bru
 [geojson2h3](https://github.com/uber/geojson2h3)
 'fs','node-fetch','minimist' (for argv)
 
-[You can dig in using Space Invader](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=zCOXmZmy&token=AE91crC4SyWB3zCSeH3HWwA&basemap=xyz-pixel&projection=mercator&demo=0&vizMode=xray&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=2&places=1&roads=1&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=0&tags=85688637_california_5_h3_hexagons&palette=viridis&paletteFlip=false&sort=count&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#6.6833333333333345/37.416/-119.648)
+
