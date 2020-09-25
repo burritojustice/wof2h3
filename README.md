@@ -15,8 +15,8 @@ This will generate two files:
 
 The feature IDs of the hexbins are the h3 IDs.
 
-![california_h3_r5_hexbins](california_h3_r5_hexbins.png)
-![california_h3_r5_centroids](california_h3_r5_centroids.png)
+![images/california_h3_r5_hexbins](california_h3_r5_hexbins.png)
+![images/california_h3_r5_centroids](california_h3_r5_centroids.png)
 
 
 It is not pretty code, but it works. I am not a good node.js developer and got this to work through brute force and desperation. A few questions:
