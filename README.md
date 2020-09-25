@@ -24,7 +24,7 @@ If an `alt_mapzen` [alternate geometry](https://whosonfirst.org/docs/geometries/
 
 I made this with the idea of generating high resolution H3 grids to be viewed at lower map zoom levels for a dot density map or to simulate a heat map.  It's also interesting to see how h3 hexbins stack at different resolutions. 
 
-[germany r4,5,6](images/germany_4_5_6.png)
+![germany r4,5,6](images/germany_4_5_6.png)
 [link](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=cQMGVs2y&token=AKkz6TS4RG6piCQnWro2gAA&basemap=xyz-pixel&projection=mercator&demo=0&vizMode=xray&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=3&places=1&roads=0&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=1&tags=85633111_germany_4_h3_hexbins%2C85633111_germany_5_h3_hexbins%2C85633111_germany_6_h3_hexbins&property=%40ns%3Acom%3Ahere%3Axyz.uuid&palette=colorBrewerBlue&paletteFlip=true&sort=values&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#8.604166666666686/54.0643/9.5771)
 
 But it also looks cool as just a space-filling pattern.
