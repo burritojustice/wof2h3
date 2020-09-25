@@ -69,7 +69,7 @@ But it also looks cool as just a space-filling pattern.
 
 ## Questions:
 
-I don't really know what I'm doong with node.js and got this to work through brute force and desperation and coffee and IPA. A few questions:
+I don't really know what I'm doing with node and got this to work through brute force and desperation and coffee and IPA. A few questions:
 
 - Why did I need to `.mjs` and `import` instead of `const`? 
 - How do I package this so you don't have to run around and grab dependencies?
@@ -78,6 +78,6 @@ I don't really know what I'm doong with node.js and got this to work through bru
 
 [h3.js](https://github.com/uber/h3-js)
 [geojson2h3](https://github.com/uber/geojson2h3)
-'fs','node-fetch','minimist' (for argv)
+`fs`,`node-fetch`,`minimist` (for `argv`)
 
 
