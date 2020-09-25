@@ -1,5 +1,4 @@
 # wof2h3
-Generate H3 hexbin grids of an area using WOF IDs
 
 This node.js script takes a WOF ID and an H3 resolution as input and generates an H3 hexgrid that fills the geometry specified by the WOF ID (city, region, country, continent...) It saves the hexbin grid and their centroids to two GeoJSON files.
 ```
