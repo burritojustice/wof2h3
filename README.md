@@ -10,16 +10,23 @@ This node.js script takes a WOF ID and an H3 resolution as input and generates a
 
 This will generate two files:
 
-85688637_California_6_h3_hexagons.geojson
-85688637_California_6_h3_centroids.geojson
+[85688637_California_6_h3_hexagons.geojson](data/85688637_California_6_h3_hexagons.geojson)
+[85688637_California_6_h3_centroids.geojson](data/85688637_California_6_h3_hexagons.geojson)
 
 The feature IDs of the hexbins are the h3 IDs.
 
 ![california_h3_r5_hexbins](images/california_h3_r5_hexbins.png)
 ![california_h3_r5_centroids](images/california_h3_r5_centroids.png)
 
+If an `alt_mapzen` [alternate geometry](https://whosonfirst.org/docs/geometries/alt/) is available, it will be used instead of the default WOF geometry. (Sorry Farallons.)
 
-It is not pretty code, but it works. I am not a good node.js developer and got this to work through brute force and desperation. A few questions:
+## What is this for?
+
+I made this with the idea of generating high resolution H3 grids to be viewed at lower map zoom levels for a dot density map or to simulate a heat map. But it also looks cool as just a space-filling pattern. It's also interesting to see how h3 hexbins stack at different resolutions.
+
+## Questions:
+
+I am not a good node.js developer and got this to work through brute force and desperation. A few questions:
 
 - Why did I need to `.mjs` and `import` instead of `const`? 
 - How do I package this so you don't have to run around and grab dependencies?
