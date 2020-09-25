@@ -30,7 +30,7 @@ I made this with the idea that high resolution H3 grids could be viewed at lower
 
 And the h3 grid makes much more sense when you [don't use web mercator](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=mo5hYdrg&token=AImxjR4_RQqThipP0YT4agA&basemap=xyz-reduction-light&projection=globe&demo=0&vizMode=property&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=2&places=0&roads=0&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=1&tags=102191575_north_america_3_h3_hexbins&palette=viridis&paletteFlip=false&sort=count&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#4.675000000000004/44.009/-98.993)
 
-![north america space invader globe](images/north&20america_spherical.png)
+![north america space invader globe](images/north%20america_spherical.png)
 
 But it also looks cool as just a space-filling pattern.
 
