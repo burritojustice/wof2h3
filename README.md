@@ -1,6 +1,7 @@
 # wof2h3
 
-This node.js script takes a WOF ID and an H3 resolution as input and generates an H3 hexgrid that fills the geometry specified by the WOF ID (city, region, country, continent...) It saves the hexbin grid and their centroids to two GeoJSON files.
+This node.js script takes a [Who's On First](https://whosonfirst.org/) identifier and an H3 resolution as input and generates an H3 hexgrid that fills the geometry specified by the WOF ID (city, region, country, continent...) It saves the hexbin grid and their centroids to two GeoJSON files.
+
 ```
 $ node wof2h3.mjs 85688637 5
 WOF ID 85688637 California
@@ -12,6 +13,7 @@ $ node wof2h3.mjs 85688637 7
 WOF ID 85688637 California
 77011 hexbins
 ```
+(If you're not familiar with Who's On First it's an open source gazetteer with stable identifiers. For example, California is, and always will be [85688637](https://spelunker.whosonfirst.org/id/85688637/). You can look up an WOF ID using the [Spelunker](https://spelunker.whosonfirst.org/).)
 
 It generates two files named `wofid_wofname_h3resolution_kind.geojson`
 
