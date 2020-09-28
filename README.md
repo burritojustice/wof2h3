@@ -69,6 +69,10 @@ But it also looks cool as just a space-filling pattern.
 
 ![us colors](images/us_cbpaired.png)
 
+## Issues:
+
+- `geojson2h3.featureToH3Set` only returns hexagons where the centroid falls within the provided polygon. While this makes sense when you have neighboring polygons, it would be nice to geet all hexagons that touch a stand-alone polygon if that's how you roll. [h3.polyill](https://github.com/uber/h3-js#h3polyfillcoordinates-res-isgeojson--arrayh3index) returns an outline of the perimeter of the polygon, so maybe you could traverse that set and check if any of their edges are inside the source polygon?
+
 ## Questions:
 
 I don't really know what I'm doing with node and got this to work through brute force and desperation and coffee and IPA. A few questions:
