@@ -78,8 +78,8 @@ I don't really know what I'm doing with node and got this to work through brute 
 
 ## dependencies
 
-[h3.js](https://github.com/uber/h3-js)
-[geojson2h3](https://github.com/uber/geojson2h3)
-`fs`,`node-fetch`,`minimist` (for `argv`)
+- [h3.js](https://github.com/uber/h3-js)
+- [geojson2h3](https://github.com/uber/geojson2h3)
+- `fs`,`node-fetch`,`minimist` (for `argv`)
 
 
