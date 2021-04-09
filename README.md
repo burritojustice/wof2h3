@@ -48,7 +48,7 @@ The feature ID is the h3 index.
             ]...
 ```
 
-You can then dig in using whatever GeoJSON tools you prefer, such as [HERE Data Hub aka XYZ](https://www.here.xyz/) or Tangram and [Space Invader](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=zCOXmZmy&token=AE91crC4SyWB3zCSeH3HWwA&basemap=xyz-pixel&projection=mercator&demo=0&vizMode=xray&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=2&places=1&roads=1&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=0&tags=85688637_california_5_h3_hexagons&palette=viridis&paletteFlip=false&sort=count&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#6.6833333333333345/37.416/-119.648)
+You can then dig in using whatever GeoJSON tools you prefer, such as [HERE Data Hub aka XYZ](https://www.here.xyz/) or Tangram and [Space Invader](https://s3.amazonaws.com/xyz-demo/scenes/xyz_tangram/index.html?space=zCOXmZmy&token=AE91crC4SyWB3zCSeH3HWwA&basemap=xyz-pixel&projection=mercator&demo=0&vizMode=xray&buildings=1&pattern=&patternColor=%2384c6f9&points=9&lines=0&outlines=2&places=1&roads=1&clustering=0&quadCountmode=mixed&quadRez=4&hexbins=0&voronoi=0&delaunay=0&water=0&tags=85688637_california_5_h3_hexagons&palette=viridis&paletteFlip=false&sort=count&hideOutliers=false&pointSizeProp=&pointSizeRange=%5B4%2C20%5D&propertySearch=%7B%7D#6.6833333333333345/37.416/-119.648) or https://geojson.tool
 
 If an `alt_mapzen` [alternate geometry](https://whosonfirst.org/docs/geometries/alt/) is available, it will be used instead of the default WOF geometry. (Sorry Farallons.)
 
@@ -71,7 +71,7 @@ But it also looks cool as just a space-filling pattern.
 
 ## Issues:
 
-- `geojson2h3.featureToH3Set` only returns hexagons where the centroid falls within the provided polygon. While this makes sense when you have neighboring polygons, it would be nice to geet all hexagons that touch a stand-alone polygon if that's how you roll. [h3.polyill](https://github.com/uber/h3-js#h3polyfillcoordinates-res-isgeojson--arrayh3index) returns an outline of the perimeter of the polygon, so maybe you could traverse that set and check if any of their edges are inside the source polygon?
+- `geojson2h3.featureToH3Set` only returns hexagons where the centroid falls within the provided polygon. While this makes sense when you have neighboring polygons, it would be nice to get all hexagons that touch a stand-alone polygon (if that's how you roll). [h3.polyfill](https://github.com/uber/h3-js#h3polyfillcoordinates-res-isgeojson--arrayh3index) returns an outline of the perimeter of the polygon, so maybe you could traverse that set and check if any of their edges are inside the source polygon?
 
 ## Questions:
 
